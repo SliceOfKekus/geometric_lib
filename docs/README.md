@@ -19,7 +19,14 @@
 
 Пример вызова функции
 
-```area(10, 20)```
+```
+import rectangle
+    
+a = 10
+b = 20
+area = rectangle.area(a, b)
+print(area) # out - 200
+```
 
 2. ### ```def perimeter(a, b):```
 Вычисляет периметр прямоугольника.
@@ -32,7 +39,14 @@
 
 Пример вызова функции
 
-```perimeter(10, 20)```
+```
+import rectangle
+    
+a = 10
+b = 20
+perimeter = rectangle.perimeter(a, b)
+print(perimeter) # out - 60
+```
 
 ## circle
 1. ### ```def area(r):```
@@ -45,7 +59,13 @@
 
 Пример вызова функции
 
-```area(10)```
+```
+import circle
+
+radius = 1
+area = circle.area(radius)
+print(area) # out - 3.141592653589793
+```
 
 2. ### ```def perimeter(a, b):```
 Вычисляет периметр окружности.
@@ -57,7 +77,13 @@
 
 Пример вызова функции
 
-```perimeter(10)```
+```
+import circle
+
+radius = 1
+perimeter = circle.perimeter(radius)
+print(perimeter) # out - 6.283185307179586
+```
 
 ## triangle
 1. ### ```def area(a, h):```
@@ -71,7 +97,14 @@
 
 Пример вызова функции
 
-```area(10)```
+```
+import triangle
+
+a = 3
+h = 3
+area = triangle.area(a, h)
+print(area) # out - 4.5
+```
 
 2. ### ```def perimeter(a, b, c):```
 Вычисляет периметр треугольника
@@ -85,7 +118,15 @@
 
 Пример вызова функции
 
-```perimeter(3, 4, 5)```
+```
+import triangle
+
+a = 3
+b = 4
+c = 5
+perimeter = triangle.perimeter(a, b, c)
+print(perimeter) # out - 12
+```
 
 ## square
 1. ### ```def area(a):```
@@ -98,7 +139,13 @@
 
 Пример вызова функции
 
-```area(5)```
+```
+import square
+
+a = 3
+area = square.area(a)
+print(area) # out - 9
+```
 
 2. ### ```def perimeter(a):```
 Вычисляет периметр квадрата
@@ -110,7 +157,13 @@
 
 Пример вызова функции
 
-```perimeter(5)```
+```
+import square
+
+a = 3
+perimeter = square.perimeter(a)
+print(perimeter) # out - 12
+```
 
 # Math formulas
 ## Area
