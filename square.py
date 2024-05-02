@@ -8,6 +8,9 @@ def area(a):
         Возвращаемое значение:
             a * a (float): площадь квадрата
     '''
+    if (a < 0):
+        raise ValueError("length must be greater than zero")
+
     return a * a
 
 
@@ -21,4 +24,7 @@ def perimeter(a):
         Возвращаемое значение:
             4 * a (float): периметр квадрата
     '''
+    if (a < 0):
+        raise ValueError("length must be greater than zero")
+
     return 4 * a
