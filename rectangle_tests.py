@@ -41,8 +41,8 @@ class TestRectangle(unittest.TestCase):
             Возвращаемое значение:
 
         '''
-        res = rectangle.area(0, 0)
-        self.assertEqual(res, 0)
+        with self.assertRaises(ValueError):
+            rectangle.area(0, 0)
 
     def test_area_zero_one_side(self):
         '''
@@ -53,11 +53,11 @@ class TestRectangle(unittest.TestCase):
             Возвращаемое значение:
 
         '''
-        res = rectangle.area(0, 1)
-        self.assertEqual(res, 0)
+        with self.assertRaises(ValueError):
+            rectangle.area(0, 1)
 
-        res = rectangle.area(1, 0)
-        self.assertEqual(res, 0)
+        with self.assertRaises(ValueError):
+            rectangle.area(1, 0)
 
 
     def test_area_positive_sides(self):
@@ -110,8 +110,8 @@ class TestRectangle(unittest.TestCase):
             Возвращаемое значение:
 
         '''
-        res = rectangle.perimeter(0, 0)
-        self.assertEqual(res, 0)
+        with self.assertRaises(ValueError):
+            rectangle.perimeter(0, 0)
 
 
     def test_perimeter_zero_one_side(self):
