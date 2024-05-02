@@ -9,11 +9,11 @@ jobs:
   ubuntu_compatibility:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Unit tests
+      - name: Unit tests on Ubuntu
         run : |
           python -m unittest "circle_tests.py"
           python -m unittest "rectangle_tests.py"
@@ -23,11 +23,11 @@ jobs:
   windows_compatibility:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Unit tests
+      - name: Unit tests on Windows
         run : |
           python -m unittest "circle_tests.py"
           python -m unittest "rectangle_tests.py"
