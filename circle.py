@@ -10,6 +10,9 @@ def area(r):
         Возвращаемое значение:
             math.pi * r * r (float): площадь окружности
     '''
+    if (r < 0):
+        raise ValueError("length must be greater than zero")
+
     return math.pi * r * r
 
 
@@ -23,5 +26,8 @@ def perimeter(r):
         Возвращаемое значение:
             2 * math.pi * r (float): периметр окружности
     '''
+    if (r < 0):
+        raise ValueError("length must be greater than zero")
+
     return 2 * math.pi * r
 
